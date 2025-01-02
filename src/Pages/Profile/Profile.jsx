@@ -53,7 +53,7 @@ function Profile() {
  
           // Generate the file URL if the ID exists
           const profileImageURL = profileImageID
-            ? storage.getFileView('6772a791000718f7490d', profileImageID) // Replace with your bucket ID
+            ? storage.getFileView('677662a80003965870e9', profileImageID) // Replace with your bucket ID
             : '';
  
           setProfile({
@@ -152,7 +152,7 @@ function Profile() {
  
         try {
           const fileUploadResponse = await storage.createFile(
-            '6772a791000718f7490d', // Replace with your bucket ID
+            '677662a80003965870e9', // Replace with your bucket ID
             ID.unique(),
             profile.profileImage
           );
@@ -250,7 +250,7 @@ function Profile() {
     try {
       // Step 1: Upload the selected file to Appwrite Storage
       const response = await storage.createFile(
-        '6772a791000718f7490d', // Replace with your bucket ID
+        '677662a80003965870e9', // Replace with your bucket ID
         ID.unique(),
         file
       );
